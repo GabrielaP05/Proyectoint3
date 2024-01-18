@@ -1,0 +1,29 @@
+import os
+
+def clear_terminal():
+    # Borra la terminal según el sistema operativo
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+def main():
+    numero = 0
+
+    while numero <= 50:
+        # Espera a la tecla 'n' del teclado
+        input("Presiona 'n' y luego Enter para continuar...")
+
+        # Borra la terminal y muestra el nuevo número
+        clear_terminal()
+        print(f"Nuevo número: {numero}")
+
+        # Incrementa el número
+        numero += 1
+
+if __name__ == "__main__":
+    main()
+
+
+
+
+
+
+
